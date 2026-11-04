@@ -23,6 +23,8 @@ keeps itself in sync as the wiki changes.
 ## Apply the edits (B1, sync module)
 ```bash
 cd shopkart-wiki
-python edits/apply_edits.py      # makes two commits: an edit and a new page, then a delete and two bad pages
-git push
+python edits/apply_edits.py      # two commits on a new branch, wiki-edits: an edit and a new page, then a delete and two bad pages
+git push -u origin wiki-edits
 ```
+The edits go on their own branch and your `main` stays as it is: your eval numbers and your deployed app read
+`main`. B1's README shows how to sync the branch.
