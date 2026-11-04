@@ -19,11 +19,10 @@ keeps itself in sync as the wiki changes.
 |---|---|
 | `docs/` | the wiki itself: 32 markdown pages, 3 help-centre HTML pages and 1 PDF |
 | `edits/` | a set of changes you apply in B1's sync module, to see an add, an edit and a delete reach the index |
-| `tools/` | Crio's script that regenerates the PDF; you don't need it |
 
 ## Apply the edits (B1, sync module)
 ```bash
 cd shopkart-wiki
-python edits/apply_edits.py      # makes two commits: an edit and two new pages, then a delete and two bad pages
+python edits/apply_edits.py      # makes two commits: an edit and a new page, then a delete and two bad pages
 git push
 ```
